@@ -38,6 +38,7 @@
 uint8_t z;
 uint8_t dato;
 uint8_t var1;
+uint8_t Ultrasonico; 
 uint8_t datoRecibido;
 //*****************************************************************************
 // Definiciï¿½n de funciones para que se puedan colocar despuï¿½s del main de lo 
@@ -49,7 +50,7 @@ void setup(void);
 //*****************************************************************************
 void __interrupt() isr(void)
 {
-    recibir_valoresADC(); 
+    recibir_valoresADC();
     if(PIR1bits.SSPIF){ 
         SSPCONbits.CKP = 0; //reloj bajo configuracion datos
        
@@ -72,7 +73,7 @@ void __interrupt() isr(void)
         }else if(!SSPSTATbits.D_nA && SSPSTATbits.R_nW){ //Env de datos
             z = SSPBUF;
             SSPSTATbits.BF = 0;
-            SSPBUF = var1;
+            SSPBUF = Ultrasonico;
             SSPCONbits.CKP = 1;
             __delay_us(250);
             while(SSPSTATbits.BF);
@@ -92,6 +93,15 @@ void main(void) {
     while(1)
     {
         inicio_conversionADC();
+        if (var1 < 10)
+        {
+            Ultrasonico = 0; 
+        } 
+        else
+        {
+            Ultrasonico = 1; 
+        } 
+            
     }
     return;
 }

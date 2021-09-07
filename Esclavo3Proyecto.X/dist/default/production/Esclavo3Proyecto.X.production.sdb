@@ -21,11 +21,11 @@
 [v _I2C_Master_Wait I2C_Master_Wait `(v  1 e 1 0 ]
 "88
 [v _I2C_Slave_Init I2C_Slave_Init `(v  1 e 1 0 ]
-"50 D:\Microcontroladores\MPLab\Esclavo3Proyecto.X\main_Esclavo3.c
+"51 D:\Microcontroladores\MPLab\Esclavo3Proyecto.X\main_Esclavo3.c
 [v _isr isr `II(v  1 e 1 0 ]
-"87
+"88
 [v _main main `(v  1 e 1 0 ]
-"100
+"110
 [v _setup setup `(v  1 e 1 0 ]
 "228 C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h
 [v _PORTB PORTB `VEuc  1 e 1 @6 ]
@@ -281,16 +281,18 @@
 "40
 [v _var1 var1 `uc  1 e 1 0 ]
 "41
+[v _Ultrasonico Ultrasonico `uc  1 e 1 0 ]
+"42
 [v _datoRecibido datoRecibido `uc  1 e 1 0 ]
-"87
+"88
 [v _main main `(v  1 e 1 0 ]
 {
-"97
+"107
 } 0
-"100
+"110
 [v _setup setup `(v  1 e 1 0 ]
 {
-"164
+"174
 } 0
 "88 D:\Microcontroladores\MPLab\Esclavo3Proyecto.X\I2C_Esclavo3.c
 [v _I2C_Slave_Init I2C_Slave_Init `(v  1 e 1 0 ]
@@ -306,10 +308,10 @@
 {
 "40
 } 0
-"50 D:\Microcontroladores\MPLab\Esclavo3Proyecto.X\main_Esclavo3.c
+"51 D:\Microcontroladores\MPLab\Esclavo3Proyecto.X\main_Esclavo3.c
 [v _isr isr `II(v  1 e 1 0 ]
 {
-"83
+"84
 } 0
 "14 D:\Microcontroladores\MPLab\Esclavo3Proyecto.X\ADC_Esclavo3.c
 [v _recibir_valoresADC recibir_valoresADC `(v  1 e 1 0 ]

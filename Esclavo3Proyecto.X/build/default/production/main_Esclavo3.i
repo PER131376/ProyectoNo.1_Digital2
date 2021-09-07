@@ -2710,6 +2710,7 @@ void I2C_Slave_Init(uint8_t address);
 uint8_t z;
 uint8_t dato;
 uint8_t var1;
+uint8_t Ultrasonico;
 uint8_t datoRecibido;
 
 
@@ -2744,7 +2745,7 @@ void __attribute__((picinterrupt(("")))) isr(void)
         }else if(!SSPSTATbits.D_nA && SSPSTATbits.R_nW){
             z = SSPBUF;
             SSPSTATbits.BF = 0;
-            SSPBUF = var1;
+            SSPBUF = Ultrasonico;
             SSPCONbits.CKP = 1;
             _delay((unsigned long)((250)*(4000000/4000000.0)));
             while(SSPSTATbits.BF);
@@ -2764,6 +2765,15 @@ void main(void) {
     while(1)
     {
         inicio_conversionADC();
+        if (var1 < 10)
+        {
+            Ultrasonico = 0;
+        }
+        else
+        {
+            Ultrasonico = 1;
+        }
+
     }
     return;
 }
