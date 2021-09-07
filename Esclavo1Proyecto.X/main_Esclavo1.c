@@ -50,13 +50,13 @@ void setup(void);
 void __interrupt() isr(void)
 {
     recibir_valoresADC();
-    if (var1 < 5)
+    if (var1 < 5 & datoRecibido == 1) //Abrir tolvas
     {
         CCPR1L = 0x3E; 
         CCP1CONbits.DC1B1 = 1; 
         CCP1CONbits.DC1B0 = 0;
     }
-    if(var1 > 200 & datoRecibido == 1)
+    if(var1 > 200) //cerrar Tolvas 
     {
         CCPR1L = 0x9C; 
         CCP1CONbits.DC1B1 = 0; 
@@ -105,6 +105,15 @@ void main(void) {
     while(1)
     {
         inicio_conversionADC();
+        if(datoRecibido == 1)
+        {
+            PORTBbits.RB7 = 1;
+        }
+        else
+        {
+            PORTBbits.RB7 = 0;
+        }
+            
     }
     return;
 }
