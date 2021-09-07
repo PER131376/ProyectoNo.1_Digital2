@@ -7,17 +7,6 @@ Version 4.0 HI-TECH Software Intermediate Code
 "4103
 [; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h: 4103: extern volatile __bit RB0 __attribute__((address(0x30)));
 [v _RB0 `Vb ~T0 @X0 0 e@48 ]
-"172
-[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h: 172:     struct {
-[s S7 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S7 . RA0 RA1 RA2 RA3 RA4 RA5 RA6 RA7 ]
-"171
-[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h: 171: typedef union {
-[u S6 `S7 1 ]
-[n S6 . . ]
-"183
-[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h: 183: extern volatile PORTAbits_t PORTAbits __attribute__((address(0x005)));
-[v _PORTAbits `VS6 ~T0 @X0 0 e@5 ]
 "465
 [; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h: 465:     struct {
 [s S17 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
@@ -34,8 +23,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h: 482: extern volatile INTCONbits_t INTCONbits __attribute__((address(0x00B)));
 [v _INTCONbits `VS16 ~T0 @X0 0 e@11 ]
 [p mainexit ]
-"45 main_proyectoMaster.c
-[; ;main_proyectoMaster.c: 45: void setup(void);
+"47 main_proyectoMaster.c
+[; ;main_proyectoMaster.c: 47: void setup(void);
 [v _setup `(v ~T0 @X0 0 ef ]
 "1602 C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h
 [; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h: 1602: extern volatile unsigned char TRISD __attribute__((address(0x088)));
@@ -43,8 +32,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 "75 ./LCDP_Master.h
 [; ;./LCDP_Master.h: 75: void Lcd_Init(void);
 [v _Lcd_Init `(v ~T0 @X0 0 ef ]
-"48 main_proyectoMaster.c
-[; ;main_proyectoMaster.c: 48: void com_master(void);
+"50 main_proyectoMaster.c
+[; ;main_proyectoMaster.c: 50: void com_master(void);
 [v _com_master `(v ~T0 @X0 0 ef ]
 "420 C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h
 [; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h: 420:     struct {
@@ -57,6 +46,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 "427
 [; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h: 427: extern volatile PORTEbits_t PORTEbits __attribute__((address(0x009)));
 [v _PORTEbits `VS14 ~T0 @X0 0 e@9 ]
+"166
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h: 166: extern volatile unsigned char PORTA __attribute__((address(0x005)));
+[v _PORTA `Vuc ~T0 @X0 0 e@5 ]
 "194 C:\Program Files\Microchip\xc8\v2.31\pic\include\c90\stdio.h
 [v _sprintf `(i ~T0 @X0 0 e1v`*uc`*Cuc ]
 "73 ./LCDP_Master.h
@@ -69,8 +61,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 "92 C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\pic.h
 [v __delay `JF1425 ~T0 @X0 0 e ]
 [p i __delay ]
-"46 main_proyectoMaster.c
-[; ;main_proyectoMaster.c: 46: void valorsensores(void);
+"48 main_proyectoMaster.c
+[; ;main_proyectoMaster.c: 48: void valorsensores(void);
 [v _valorsensores `(v ~T0 @X0 0 ef ]
 "3387 C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h
 [; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h: 3387: extern volatile unsigned char ANSEL __attribute__((address(0x188)));
@@ -116,9 +108,6 @@ Version 4.0 HI-TECH Software Intermediate Code
 "2346
 [; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h: 2346: extern volatile unsigned char WPUB __attribute__((address(0x095)));
 [v _WPUB `Vuc ~T0 @X0 0 e@149 ]
-"166
-[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h: 166: extern volatile unsigned char PORTA __attribute__((address(0x005)));
-[v _PORTA `Vuc ~T0 @X0 0 e@5 ]
 "414
 [; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h: 414: extern volatile unsigned char PORTE __attribute__((address(0x009)));
 [v _PORTE `Vuc ~T0 @X0 0 e@9 ]
@@ -140,8 +129,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 "1882
 [; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h: 1882: extern volatile OSCCONbits_t OSCCONbits __attribute__((address(0x08F)));
 [v _OSCCONbits `VS70 ~T0 @X0 0 e@143 ]
-"47 main_proyectoMaster.c
-[; ;main_proyectoMaster.c: 47: void configuracionUART(void);
+"49 main_proyectoMaster.c
+[; ;main_proyectoMaster.c: 49: void configuracionUART(void);
 [v _configuracionUART `(v ~T0 @X0 0 ef ]
 "2422 C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h
 [; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h: 2422:     struct {
@@ -515,418 +504,475 @@ Version 4.0 HI-TECH Software Intermediate Code
 -> -> 0 `i `uc
 ]
 "37
-[; ;main_proyectoMaster.c: 37: int contRecipiente = 0;
+[; ;main_proyectoMaster.c: 37: int start = 0;
+[v _start `i ~T0 @X0 1 e ]
+[i _start
+-> 0 `i
+]
+"38
+[; ;main_proyectoMaster.c: 38: int contRecipiente = 0;
 [v _contRecipiente `i ~T0 @X0 1 e ]
 [i _contRecipiente
 -> 0 `i
 ]
-"38
-[; ;main_proyectoMaster.c: 38: int datUltrasonico = 0;
+"39
+[; ;main_proyectoMaster.c: 39: int datUltrasonico = 0;
 [v _datUltrasonico `i ~T0 @X0 1 e ]
 [i _datUltrasonico
 -> 0 `i
 ]
-"39
-[; ;main_proyectoMaster.c: 39: float v1 = 0;
+"40
+[; ;main_proyectoMaster.c: 40: float v1 = 0;
 [v _v1 `f ~T0 @X0 1 e ]
 [i _v1
 -> -> 0 `i `f
 ]
-"40
-[; ;main_proyectoMaster.c: 40: float v2 = 0;
+"41
+[; ;main_proyectoMaster.c: 41: float v2 = 0;
 [v _v2 `f ~T0 @X0 1 e ]
 [i _v2
 -> -> 0 `i `f
 ]
-"41
-[; ;main_proyectoMaster.c: 41: float v3 = 0;
+"42
+[; ;main_proyectoMaster.c: 42: float v3 = 0;
 [v _v3 `f ~T0 @X0 1 e ]
 [i _v3
 -> -> 0 `i `f
 ]
-"42
-[; ;main_proyectoMaster.c: 42: int POT;
-[v _POT `i ~T0 @X0 1 e ]
 "43
-[; ;main_proyectoMaster.c: 43: char s[20];
+[; ;main_proyectoMaster.c: 43: int POT;
+[v _POT `i ~T0 @X0 1 e ]
+"44
+[; ;main_proyectoMaster.c: 44: int datPeso;
+[v _datPeso `i ~T0 @X0 1 e ]
+"45
+[; ;main_proyectoMaster.c: 45: char s[20];
 [v _s `uc ~T0 @X0 -> 20 `i e ]
 [v $root$_isr `(v ~T0 @X0 0 e ]
-"50
-[; ;main_proyectoMaster.c: 50: void __attribute__((picinterrupt((""))))isr(void)
+"52
+[; ;main_proyectoMaster.c: 52: void __attribute__((picinterrupt((""))))isr(void)
 [v _isr `(v ~T1 @X0 1 ef ]
-"51
-[; ;main_proyectoMaster.c: 51: {
+"53
+[; ;main_proyectoMaster.c: 53: {
 {
 [e :U _isr ]
 [f ]
-"52
-[; ;main_proyectoMaster.c: 52:     if(RBIF == 1)
-[e $ ! == -> _RBIF `i -> 1 `i 140  ]
-"53
-[; ;main_proyectoMaster.c: 53:     {
-{
 "54
-[; ;main_proyectoMaster.c: 54:         if(RB0 == 0)
-[e $ ! == -> _RB0 `i -> 0 `i 141  ]
+[; ;main_proyectoMaster.c: 54:     if(RBIF == 1)
+[e $ ! == -> _RBIF `i -> 1 `i 140  ]
 "55
-[; ;main_proyectoMaster.c: 55:         {
+[; ;main_proyectoMaster.c: 55:     {
 {
 "56
-[; ;main_proyectoMaster.c: 56:             BanStart = 1;
-[e = _BanStart -> -> 1 `i `uc ]
+[; ;main_proyectoMaster.c: 56:         if(RB0 == 0)
+[e $ ! == -> _RB0 `i -> 0 `i 141  ]
 "57
-[; ;main_proyectoMaster.c: 57:             PORTAbits.RA0 = 1;
-[e = . . _PORTAbits 0 0 -> -> 1 `i `uc ]
+[; ;main_proyectoMaster.c: 57:         {
+{
 "58
-[; ;main_proyectoMaster.c: 58:         }
+[; ;main_proyectoMaster.c: 58:             start = 1;
+[e = _start -> 1 `i ]
+"59
+[; ;main_proyectoMaster.c: 59:             if (datUltrasonico == 0 & start == 1)
+[e $ ! & == _datUltrasonico -> 0 `i == _start -> 1 `i 142  ]
+"60
+[; ;main_proyectoMaster.c: 60:             {
+{
+"61
+[; ;main_proyectoMaster.c: 61:                 BanStart = 1;
+[e = _BanStart -> -> 1 `i `uc ]
+"62
+[; ;main_proyectoMaster.c: 62:             }
+}
+[e :U 142 ]
+"63
+[; ;main_proyectoMaster.c: 63:         }
 }
 [e :U 141 ]
-"59
-[; ;main_proyectoMaster.c: 59:     }
+"64
+[; ;main_proyectoMaster.c: 64:     }
 }
 [e :U 140 ]
-"60
-[; ;main_proyectoMaster.c: 60:     INTCONbits.RBIF = 0;
+"65
+[; ;main_proyectoMaster.c: 65:     INTCONbits.RBIF = 0;
 [e = . . _INTCONbits 0 0 -> -> 0 `i `uc ]
-"61
-[; ;main_proyectoMaster.c: 61: }
+"66
+[; ;main_proyectoMaster.c: 66: }
 [e :UE 139 ]
 }
 [v $root$_main `(v ~T0 @X0 0 e ]
-"63
-[; ;main_proyectoMaster.c: 63: void main(void) {
+"68
+[; ;main_proyectoMaster.c: 68: void main(void) {
 [v _main `(v ~T0 @X0 1 ef ]
 {
 [e :U _main ]
 [f ]
-"64
-[; ;main_proyectoMaster.c: 64:     setup();
-[e ( _setup ..  ]
-"65
-[; ;main_proyectoMaster.c: 65:     unsigned int a;
-[v _a `ui ~T0 @X0 1 a ]
-"66
-[; ;main_proyectoMaster.c: 66:     TRISD = 0x00;
-[e = _TRISD -> -> 0 `i `uc ]
-"67
-[; ;main_proyectoMaster.c: 67:     Lcd_Init();
-[e ( _Lcd_Init ..  ]
 "69
-[; ;main_proyectoMaster.c: 69:     while(1)
-[e :U 144 ]
+[; ;main_proyectoMaster.c: 69:     setup();
+[e ( _setup ..  ]
 "70
-[; ;main_proyectoMaster.c: 70:     {
-{
+[; ;main_proyectoMaster.c: 70:     unsigned int a;
+[v _a `ui ~T0 @X0 1 a ]
 "71
-[; ;main_proyectoMaster.c: 71:         com_master();
-[e ( _com_master ..  ]
+[; ;main_proyectoMaster.c: 71:     TRISD = 0x00;
+[e = _TRISD -> -> 0 `i `uc ]
 "72
-[; ;main_proyectoMaster.c: 72:         if (datUltrasonico < 5)
-[e $ ! < _datUltrasonico -> 5 `i 146  ]
-"73
-[; ;main_proyectoMaster.c: 73:         {
-{
+[; ;main_proyectoMaster.c: 72:     Lcd_Init();
+[e ( _Lcd_Init ..  ]
 "74
-[; ;main_proyectoMaster.c: 74:             PORTEbits.RE0 = 1;
-[e = . . _PORTEbits 0 0 -> -> 1 `i `uc ]
-"75
-[; ;main_proyectoMaster.c: 75:         }
-}
-[e $U 147  ]
-"76
-[; ;main_proyectoMaster.c: 76:         else
-[e :U 146 ]
-"77
-[; ;main_proyectoMaster.c: 77:         {
-{
-"78
-[; ;main_proyectoMaster.c: 78:             PORTEbits.RE0 = 0;
-[e = . . _PORTEbits 0 0 -> -> 0 `i `uc ]
-"79
-[; ;main_proyectoMaster.c: 79:         }
-}
-[e :U 147 ]
-"81
-[; ;main_proyectoMaster.c: 81:         sprintf(s, "%.3dcm", datUltrasonico);
-[e ( _sprintf (1 , (. , &U _s :s 1C _datUltrasonico ]
-"82
-[; ;main_proyectoMaster.c: 82:         Lcd_Set_Cursor(2,1);
-[e ( _Lcd_Set_Cursor (2 , -> -> 2 `i `uc -> -> 1 `i `uc ]
-"83
-[; ;main_proyectoMaster.c: 83:         Lcd_Write_String(s);
-[e ( _Lcd_Write_String (1 &U _s ]
-"85
-[; ;main_proyectoMaster.c: 85:         Lcd_Set_Cursor(1,2);
-[e ( _Lcd_Set_Cursor (2 , -> -> 1 `i `uc -> -> 2 `i `uc ]
-"86
-[; ;main_proyectoMaster.c: 86:         Lcd_Write_String("S1");
-[e ( _Lcd_Write_String (1 :s 2C ]
-"87
-[; ;main_proyectoMaster.c: 87:         Lcd_Set_Cursor(1,8);
-[e ( _Lcd_Set_Cursor (2 , -> -> 1 `i `uc -> -> 8 `i `uc ]
-"88
-[; ;main_proyectoMaster.c: 88:         Lcd_Write_String("S2");
-[e ( _Lcd_Write_String (1 :s 3C ]
-"89
-[; ;main_proyectoMaster.c: 89:         Lcd_Set_Cursor(1,14);
-[e ( _Lcd_Set_Cursor (2 , -> -> 1 `i `uc -> -> 14 `i `uc ]
-"90
-[; ;main_proyectoMaster.c: 90:         Lcd_Write_String("S3");
-[e ( _Lcd_Write_String (1 :s 4C ]
-"92
-[; ;main_proyectoMaster.c: 92:         sprintf(s, "%.2dUni", contRecipiente);
-[e ( _sprintf (1 , (. , &U _s :s 5C _contRecipiente ]
-"93
-[; ;main_proyectoMaster.c: 93:         Lcd_Set_Cursor(2,7);
-[e ( _Lcd_Set_Cursor (2 , -> -> 2 `i `uc -> -> 7 `i `uc ]
-"94
-[; ;main_proyectoMaster.c: 94:         Lcd_Write_String(s);
-[e ( _Lcd_Write_String (1 &U _s ]
-"96
-[; ;main_proyectoMaster.c: 96:         sprintf(s, "%.3d", POT);
-[e ( _sprintf (1 , (. , &U _s :s 6C _POT ]
-"97
-[; ;main_proyectoMaster.c: 97:         Lcd_Set_Cursor(2,14);
-[e ( _Lcd_Set_Cursor (2 , -> -> 2 `i `uc -> -> 14 `i `uc ]
-"98
-[; ;main_proyectoMaster.c: 98:         Lcd_Write_String(s);
-[e ( _Lcd_Write_String (1 &U _s ]
-"99
-[; ;main_proyectoMaster.c: 99:         _delay((unsigned long)((80)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 80 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
-"100
-[; ;main_proyectoMaster.c: 100:         valorsensores();
-[e ( _valorsensores ..  ]
-"102
-[; ;main_proyectoMaster.c: 102:     }
-}
-[e :U 143 ]
-[e $U 144  ]
+[; ;main_proyectoMaster.c: 74:     while(1)
 [e :U 145 ]
-"103
-[; ;main_proyectoMaster.c: 103: }
-[e :UE 142 ]
+"75
+[; ;main_proyectoMaster.c: 75:     {
+{
+"76
+[; ;main_proyectoMaster.c: 76:         com_master();
+[e ( _com_master ..  ]
+"77
+[; ;main_proyectoMaster.c: 77:         PORTEbits.RE2 = start;
+[e = . . _PORTEbits 0 2 -> _start `uc ]
+"79
+[; ;main_proyectoMaster.c: 79:         if (datUltrasonico == 1 | contRecipiente == 6)
+[e $ ! | == _datUltrasonico -> 1 `i == _contRecipiente -> 6 `i 147  ]
+"80
+[; ;main_proyectoMaster.c: 80:         {
+{
+"81
+[; ;main_proyectoMaster.c: 81:             PORTEbits.RE0 = 1;
+[e = . . _PORTEbits 0 0 -> -> 1 `i `uc ]
+"82
+[; ;main_proyectoMaster.c: 82:             start = 0;
+[e = _start -> 0 `i ]
+"83
+[; ;main_proyectoMaster.c: 83:             BanStart = 0;
+[e = _BanStart -> -> 0 `i `uc ]
+"84
+[; ;main_proyectoMaster.c: 84:         }
 }
+[e $U 148  ]
+"85
+[; ;main_proyectoMaster.c: 85:         else
+[e :U 147 ]
+"86
+[; ;main_proyectoMaster.c: 86:         {
+{
+"87
+[; ;main_proyectoMaster.c: 87:             PORTEbits.RE0 = 0;
+[e = . . _PORTEbits 0 0 -> -> 0 `i `uc ]
+"88
+[; ;main_proyectoMaster.c: 88:         }
+}
+[e :U 148 ]
+"90
+[; ;main_proyectoMaster.c: 90:         if (contRecipiente == 6)
+[e $ ! == _contRecipiente -> 6 `i 149  ]
+"91
+[; ;main_proyectoMaster.c: 91:         {
+{
+"92
+[; ;main_proyectoMaster.c: 92:             PORTEbits.RE1 = 1;
+[e = . . _PORTEbits 0 1 -> -> 1 `i `uc ]
+"93
+[; ;main_proyectoMaster.c: 93:         }
+}
+[e $U 150  ]
+"94
+[; ;main_proyectoMaster.c: 94:         else
+[e :U 149 ]
+"95
+[; ;main_proyectoMaster.c: 95:         {
+{
+"96
+[; ;main_proyectoMaster.c: 96:             PORTEbits.RE1 = 0;
+[e = . . _PORTEbits 0 1 -> -> 0 `i `uc ]
+"97
+[; ;main_proyectoMaster.c: 97:         }
+}
+[e :U 150 ]
+"98
+[; ;main_proyectoMaster.c: 98:         PORTA = datPeso;
+[e = _PORTA -> _datPeso `uc ]
+"100
+[; ;main_proyectoMaster.c: 100:         sprintf(s, "%dcm", datUltrasonico);
+[e ( _sprintf (1 , (. , &U _s :s 1C _datUltrasonico ]
+"101
+[; ;main_proyectoMaster.c: 101:         Lcd_Set_Cursor(2,1);
+[e ( _Lcd_Set_Cursor (2 , -> -> 2 `i `uc -> -> 1 `i `uc ]
+"102
+[; ;main_proyectoMaster.c: 102:         Lcd_Write_String(s);
+[e ( _Lcd_Write_String (1 &U _s ]
+"104
+[; ;main_proyectoMaster.c: 104:         Lcd_Set_Cursor(1,1);
+[e ( _Lcd_Set_Cursor (2 , -> -> 1 `i `uc -> -> 1 `i `uc ]
 "105
-[; ;main_proyectoMaster.c: 105: void setup(void)
-[v _setup `(v ~T0 @X0 1 ef ]
+[; ;main_proyectoMaster.c: 105:         Lcd_Write_String("Ultr");
+[e ( _Lcd_Write_String (1 :s 2C ]
 "106
-[; ;main_proyectoMaster.c: 106: {
+[; ;main_proyectoMaster.c: 106:         Lcd_Set_Cursor(1,7);
+[e ( _Lcd_Set_Cursor (2 , -> -> 1 `i `uc -> -> 7 `i `uc ]
+"107
+[; ;main_proyectoMaster.c: 107:         Lcd_Write_String("Enva");
+[e ( _Lcd_Write_String (1 :s 3C ]
+"108
+[; ;main_proyectoMaster.c: 108:         Lcd_Set_Cursor(1,14);
+[e ( _Lcd_Set_Cursor (2 , -> -> 1 `i `uc -> -> 14 `i `uc ]
+"109
+[; ;main_proyectoMaster.c: 109:         Lcd_Write_String("Peso");
+[e ( _Lcd_Write_String (1 :s 4C ]
+"111
+[; ;main_proyectoMaster.c: 111:         sprintf(s, "%.2dUni", contRecipiente);
+[e ( _sprintf (1 , (. , &U _s :s 5C _contRecipiente ]
+"112
+[; ;main_proyectoMaster.c: 112:         Lcd_Set_Cursor(2,7);
+[e ( _Lcd_Set_Cursor (2 , -> -> 2 `i `uc -> -> 7 `i `uc ]
+"113
+[; ;main_proyectoMaster.c: 113:         Lcd_Write_String(s);
+[e ( _Lcd_Write_String (1 &U _s ]
+"115
+[; ;main_proyectoMaster.c: 115:         sprintf(s, "%.2dkg", datPeso);
+[e ( _sprintf (1 , (. , &U _s :s 6C _datPeso ]
+"116
+[; ;main_proyectoMaster.c: 116:         Lcd_Set_Cursor(2,13);
+[e ( _Lcd_Set_Cursor (2 , -> -> 2 `i `uc -> -> 13 `i `uc ]
+"117
+[; ;main_proyectoMaster.c: 117:         Lcd_Write_String(s);
+[e ( _Lcd_Write_String (1 &U _s ]
+"118
+[; ;main_proyectoMaster.c: 118:         _delay((unsigned long)((80)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 80 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"119
+[; ;main_proyectoMaster.c: 119:         valorsensores();
+[e ( _valorsensores ..  ]
+"121
+[; ;main_proyectoMaster.c: 121:     }
+}
+[e :U 144 ]
+[e $U 145  ]
+[e :U 146 ]
+"122
+[; ;main_proyectoMaster.c: 122: }
+[e :UE 143 ]
+}
+"124
+[; ;main_proyectoMaster.c: 124: void setup(void)
+[v _setup `(v ~T0 @X0 1 ef ]
+"125
+[; ;main_proyectoMaster.c: 125: {
 {
 [e :U _setup ]
 [f ]
-"108
-[; ;main_proyectoMaster.c: 108:     ANSEL = 0b00000000;
-[e = _ANSEL -> -> 0 `i `uc ]
-"109
-[; ;main_proyectoMaster.c: 109:     ANSELH = 0x00;
-[e = _ANSELH -> -> 0 `i `uc ]
-"111
-[; ;main_proyectoMaster.c: 111:     TRISA = 0x00;
-[e = _TRISA -> -> 0 `i `uc ]
-"112
-[; ;main_proyectoMaster.c: 112:     TRISB = 0b00000001;
-[e = _TRISB -> -> 1 `i `uc ]
-"113
-[; ;main_proyectoMaster.c: 113:     TRISE = 0x00;
-[e = _TRISE -> -> 0 `i `uc ]
-"114
-[; ;main_proyectoMaster.c: 114:     TRISBbits.TRISB0 = 1;
-[e = . . _TRISBbits 0 0 -> -> 1 `i `uc ]
-"115
-[; ;main_proyectoMaster.c: 115:     OPTION_REGbits.nRBPU = 0;
-[e = . . _OPTION_REGbits 0 5 -> -> 0 `i `uc ]
-"116
-[; ;main_proyectoMaster.c: 116:     WPUB = 0b00000001;
-[e = _WPUB -> -> 1 `i `uc ]
-"117
-[; ;main_proyectoMaster.c: 117:     PORTA = 0x00;
-[e = _PORTA -> -> 0 `i `uc ]
-"118
-[; ;main_proyectoMaster.c: 118:     PORTE = 0x00;
-[e = _PORTE -> -> 0 `i `uc ]
-"120
-[; ;main_proyectoMaster.c: 120:     I2C_Master_Init(100000);
-[e ( _I2C_Master_Init (1 -> -> 100000 `l `ul ]
-"122
-[; ;main_proyectoMaster.c: 122:     OSCCONbits. IRCF2 = 1;
-[e = . . _OSCCONbits 1 3 -> -> 1 `i `uc ]
-"123
-[; ;main_proyectoMaster.c: 123:     OSCCONbits. IRCF1 = 1;
-[e = . . _OSCCONbits 1 2 -> -> 1 `i `uc ]
-"124
-[; ;main_proyectoMaster.c: 124:     OSCCONbits. IRCF0 = 0;
-[e = . . _OSCCONbits 1 1 -> -> 0 `i `uc ]
-"125
-[; ;main_proyectoMaster.c: 125:     OSCCONbits. SCS = 1;
-[e = . . _OSCCONbits 0 0 -> -> 1 `i `uc ]
 "127
-[; ;main_proyectoMaster.c: 127:     configuracionUART();
-[e ( _configuracionUART ..  ]
-"129
-[; ;main_proyectoMaster.c: 129:     IOCBbits. IOCB0 = 1;
-[e = . . _IOCBbits 1 0 -> -> 1 `i `uc ]
+[; ;main_proyectoMaster.c: 127:     ANSEL = 0b00000000;
+[e = _ANSEL -> -> 0 `i `uc ]
+"128
+[; ;main_proyectoMaster.c: 128:     ANSELH = 0x00;
+[e = _ANSELH -> -> 0 `i `uc ]
+"130
+[; ;main_proyectoMaster.c: 130:     TRISA = 0x00;
+[e = _TRISA -> -> 0 `i `uc ]
+"131
+[; ;main_proyectoMaster.c: 131:     TRISB = 0b00000001;
+[e = _TRISB -> -> 1 `i `uc ]
 "132
-[; ;main_proyectoMaster.c: 132:     INTCONbits. GIE = 1;
-[e = . . _INTCONbits 0 7 -> -> 1 `i `uc ]
+[; ;main_proyectoMaster.c: 132:     TRISE = 0x00;
+[e = _TRISE -> -> 0 `i `uc ]
 "133
-[; ;main_proyectoMaster.c: 133:     INTCONbits. RBIE = 1;
-[e = . . _INTCONbits 0 3 -> -> 1 `i `uc ]
+[; ;main_proyectoMaster.c: 133:     TRISBbits.TRISB0 = 1;
+[e = . . _TRISBbits 0 0 -> -> 1 `i `uc ]
 "134
-[; ;main_proyectoMaster.c: 134:     INTCONbits. RBIF = 0;
-[e = . . _INTCONbits 0 0 -> -> 0 `i `uc ]
+[; ;main_proyectoMaster.c: 134:     OPTION_REGbits.nRBPU = 0;
+[e = . . _OPTION_REGbits 0 5 -> -> 0 `i `uc ]
 "135
-[; ;main_proyectoMaster.c: 135:     INTCONbits.PEIE = 1;
-[e = . . _INTCONbits 0 6 -> -> 1 `i `uc ]
+[; ;main_proyectoMaster.c: 135:     WPUB = 0b00000001;
+[e = _WPUB -> -> 1 `i `uc ]
 "136
-[; ;main_proyectoMaster.c: 136: }
-[e :UE 148 ]
-}
+[; ;main_proyectoMaster.c: 136:     PORTA = 0x00;
+[e = _PORTA -> -> 0 `i `uc ]
 "137
-[; ;main_proyectoMaster.c: 137: void configuracionUART(void)
+[; ;main_proyectoMaster.c: 137:     PORTE = 0x00;
+[e = _PORTE -> -> 0 `i `uc ]
+"139
+[; ;main_proyectoMaster.c: 139:     I2C_Master_Init(100000);
+[e ( _I2C_Master_Init (1 -> -> 100000 `l `ul ]
+"141
+[; ;main_proyectoMaster.c: 141:     OSCCONbits. IRCF2 = 1;
+[e = . . _OSCCONbits 1 3 -> -> 1 `i `uc ]
+"142
+[; ;main_proyectoMaster.c: 142:     OSCCONbits. IRCF1 = 1;
+[e = . . _OSCCONbits 1 2 -> -> 1 `i `uc ]
+"143
+[; ;main_proyectoMaster.c: 143:     OSCCONbits. IRCF0 = 0;
+[e = . . _OSCCONbits 1 1 -> -> 0 `i `uc ]
+"144
+[; ;main_proyectoMaster.c: 144:     OSCCONbits. SCS = 1;
+[e = . . _OSCCONbits 0 0 -> -> 1 `i `uc ]
+"146
+[; ;main_proyectoMaster.c: 146:     configuracionUART();
+[e ( _configuracionUART ..  ]
+"148
+[; ;main_proyectoMaster.c: 148:     IOCBbits. IOCB0 = 1;
+[e = . . _IOCBbits 1 0 -> -> 1 `i `uc ]
+"151
+[; ;main_proyectoMaster.c: 151:     INTCONbits. GIE = 1;
+[e = . . _INTCONbits 0 7 -> -> 1 `i `uc ]
+"152
+[; ;main_proyectoMaster.c: 152:     INTCONbits. RBIE = 1;
+[e = . . _INTCONbits 0 3 -> -> 1 `i `uc ]
+"153
+[; ;main_proyectoMaster.c: 153:     INTCONbits. RBIF = 0;
+[e = . . _INTCONbits 0 0 -> -> 0 `i `uc ]
+"154
+[; ;main_proyectoMaster.c: 154:     INTCONbits.PEIE = 1;
+[e = . . _INTCONbits 0 6 -> -> 1 `i `uc ]
+"155
+[; ;main_proyectoMaster.c: 155: }
+[e :UE 151 ]
+}
+"156
+[; ;main_proyectoMaster.c: 156: void configuracionUART(void)
 [v _configuracionUART `(v ~T0 @X0 1 ef ]
-"138
-[; ;main_proyectoMaster.c: 138: {
+"157
+[; ;main_proyectoMaster.c: 157: {
 {
 [e :U _configuracionUART ]
 [f ]
-"139
-[; ;main_proyectoMaster.c: 139:     TXSTAbits.SYNC = 0;
+"158
+[; ;main_proyectoMaster.c: 158:     TXSTAbits.SYNC = 0;
 [e = . . _TXSTAbits 0 4 -> -> 0 `i `uc ]
-"140
-[; ;main_proyectoMaster.c: 140:     TXSTAbits.BRGH = 1;
+"159
+[; ;main_proyectoMaster.c: 159:     TXSTAbits.BRGH = 1;
 [e = . . _TXSTAbits 0 2 -> -> 1 `i `uc ]
-"141
-[; ;main_proyectoMaster.c: 141:     BAUDCTLbits.BRG16 = 0;
+"160
+[; ;main_proyectoMaster.c: 160:     BAUDCTLbits.BRG16 = 0;
 [e = . . _BAUDCTLbits 0 3 -> -> 0 `i `uc ]
-"143
-[; ;main_proyectoMaster.c: 143:     SPBRG = 25;
+"162
+[; ;main_proyectoMaster.c: 162:     SPBRG = 25;
 [e = _SPBRG -> -> 25 `i `uc ]
-"144
-[; ;main_proyectoMaster.c: 144:     SPBRGH = 0;
+"163
+[; ;main_proyectoMaster.c: 163:     SPBRGH = 0;
 [e = _SPBRGH -> -> 0 `i `uc ]
-"146
-[; ;main_proyectoMaster.c: 146:     RCSTAbits.SPEN = 1;
+"165
+[; ;main_proyectoMaster.c: 165:     RCSTAbits.SPEN = 1;
 [e = . . _RCSTAbits 0 7 -> -> 1 `i `uc ]
-"147
-[; ;main_proyectoMaster.c: 147:     RCSTAbits.RX9 = 0;
+"166
+[; ;main_proyectoMaster.c: 166:     RCSTAbits.RX9 = 0;
 [e = . . _RCSTAbits 0 6 -> -> 0 `i `uc ]
-"148
-[; ;main_proyectoMaster.c: 148:     RCSTAbits.CREN = 1;
+"167
+[; ;main_proyectoMaster.c: 167:     RCSTAbits.CREN = 1;
 [e = . . _RCSTAbits 0 4 -> -> 1 `i `uc ]
-"150
-[; ;main_proyectoMaster.c: 150:     TXSTAbits.TXEN = 1;
+"169
+[; ;main_proyectoMaster.c: 169:     TXSTAbits.TXEN = 1;
 [e = . . _TXSTAbits 0 5 -> -> 1 `i `uc ]
-"151
-[; ;main_proyectoMaster.c: 151: }
-[e :UE 149 ]
+"170
+[; ;main_proyectoMaster.c: 170: }
+[e :UE 152 ]
 }
-"152
-[; ;main_proyectoMaster.c: 152: void com_master(void)
+"171
+[; ;main_proyectoMaster.c: 171: void com_master(void)
 [v _com_master `(v ~T0 @X0 1 ef ]
-"153
-[; ;main_proyectoMaster.c: 153: {
+"172
+[; ;main_proyectoMaster.c: 172: {
 {
 [e :U _com_master ]
 [f ]
-"154
-[; ;main_proyectoMaster.c: 154:     I2C_Master_Start();
-[e ( _I2C_Master_Start ..  ]
-"155
-[; ;main_proyectoMaster.c: 155:     I2C_Master_Write(0x50);
-[e ( _I2C_Master_Write (1 -> -> 80 `i `ui ]
-"156
-[; ;main_proyectoMaster.c: 156:     I2C_Master_Write(BanStart);
-[e ( _I2C_Master_Write (1 -> _BanStart `ui ]
-"157
-[; ;main_proyectoMaster.c: 157:     I2C_Master_Stop();
-[e ( _I2C_Master_Stop ..  ]
-"158
-[; ;main_proyectoMaster.c: 158:      _delay((unsigned long)((200)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 200 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
-"160
-[; ;main_proyectoMaster.c: 160:     I2C_Master_Start();
-[e ( _I2C_Master_Start ..  ]
-"161
-[; ;main_proyectoMaster.c: 161:     I2C_Master_Write(0x51);
-[e ( _I2C_Master_Write (1 -> -> 81 `i `ui ]
-"162
-[; ;main_proyectoMaster.c: 162:     POT = I2C_Master_Read(0);
-[e = _POT -> ( _I2C_Master_Read (1 -> -> 0 `i `us `i ]
-"163
-[; ;main_proyectoMaster.c: 163:     I2C_Master_Stop();
-[e ( _I2C_Master_Stop ..  ]
-"164
-[; ;main_proyectoMaster.c: 164:     _delay((unsigned long)((200)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 200 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
-"166
-[; ;main_proyectoMaster.c: 166:     I2C_Master_Start();
-[e ( _I2C_Master_Start ..  ]
-"167
-[; ;main_proyectoMaster.c: 167:     I2C_Master_Write(0x20);
-[e ( _I2C_Master_Write (1 -> -> 32 `i `ui ]
-"168
-[; ;main_proyectoMaster.c: 168:     I2C_Master_Write(BanStart);
-[e ( _I2C_Master_Write (1 -> _BanStart `ui ]
-"169
-[; ;main_proyectoMaster.c: 169:     I2C_Master_Stop();
-[e ( _I2C_Master_Stop ..  ]
-"170
-[; ;main_proyectoMaster.c: 170:      _delay((unsigned long)((200)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 200 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
-"172
-[; ;main_proyectoMaster.c: 172:     I2C_Master_Start();
-[e ( _I2C_Master_Start ..  ]
-"173
-[; ;main_proyectoMaster.c: 173:     I2C_Master_Write(0x21);
-[e ( _I2C_Master_Write (1 -> -> 33 `i `ui ]
 "174
-[; ;main_proyectoMaster.c: 174:     contRecipiente = I2C_Master_Read(0);
-[e = _contRecipiente -> ( _I2C_Master_Read (1 -> -> 0 `i `us `i ]
+[; ;main_proyectoMaster.c: 174:     I2C_Master_Start();
+[e ( _I2C_Master_Start ..  ]
 "175
-[; ;main_proyectoMaster.c: 175:     I2C_Master_Stop();
-[e ( _I2C_Master_Stop ..  ]
+[; ;main_proyectoMaster.c: 175:     I2C_Master_Write(0x50);
+[e ( _I2C_Master_Write (1 -> -> 80 `i `ui ]
 "176
-[; ;main_proyectoMaster.c: 176:     _delay((unsigned long)((200)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 200 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
-"178
-[; ;main_proyectoMaster.c: 178:     I2C_Master_Start();
-[e ( _I2C_Master_Start ..  ]
-"179
-[; ;main_proyectoMaster.c: 179:     I2C_Master_Write(0x40);
-[e ( _I2C_Master_Write (1 -> -> 64 `i `ui ]
-"180
-[; ;main_proyectoMaster.c: 180:     I2C_Master_Write(BanStart);
+[; ;main_proyectoMaster.c: 176:     I2C_Master_Write(BanStart);
 [e ( _I2C_Master_Write (1 -> _BanStart `ui ]
-"181
-[; ;main_proyectoMaster.c: 181:     I2C_Master_Stop();
+"177
+[; ;main_proyectoMaster.c: 177:     I2C_Master_Stop();
 [e ( _I2C_Master_Stop ..  ]
-"182
-[; ;main_proyectoMaster.c: 182:      _delay((unsigned long)((200)*(4000000/4000.0)));
+"178
+[; ;main_proyectoMaster.c: 178:      _delay((unsigned long)((200)*(4000000/4000.0)));
 [e ( __delay (1 -> * -> -> 200 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
-"184
-[; ;main_proyectoMaster.c: 184:     I2C_Master_Start();
+"180
+[; ;main_proyectoMaster.c: 180:     I2C_Master_Start();
 [e ( _I2C_Master_Start ..  ]
-"185
-[; ;main_proyectoMaster.c: 185:     I2C_Master_Write(0x41);
-[e ( _I2C_Master_Write (1 -> -> 65 `i `ui ]
-"186
-[; ;main_proyectoMaster.c: 186:     datUltrasonico = I2C_Master_Read(0);
-[e = _datUltrasonico -> ( _I2C_Master_Read (1 -> -> 0 `i `us `i ]
-"187
-[; ;main_proyectoMaster.c: 187:     I2C_Master_Stop();
+"181
+[; ;main_proyectoMaster.c: 181:     I2C_Master_Write(0x51);
+[e ( _I2C_Master_Write (1 -> -> 81 `i `ui ]
+"182
+[; ;main_proyectoMaster.c: 182:     datPeso = I2C_Master_Read(0);
+[e = _datPeso -> ( _I2C_Master_Read (1 -> -> 0 `i `us `i ]
+"183
+[; ;main_proyectoMaster.c: 183:     I2C_Master_Stop();
 [e ( _I2C_Master_Stop ..  ]
-"188
-[; ;main_proyectoMaster.c: 188:     _delay((unsigned long)((200)*(4000000/4000.0)));
+"184
+[; ;main_proyectoMaster.c: 184:     _delay((unsigned long)((200)*(4000000/4000.0)));
 [e ( __delay (1 -> * -> -> 200 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"186
+[; ;main_proyectoMaster.c: 186:     I2C_Master_Start();
+[e ( _I2C_Master_Start ..  ]
+"187
+[; ;main_proyectoMaster.c: 187:     I2C_Master_Write(0x20);
+[e ( _I2C_Master_Write (1 -> -> 32 `i `ui ]
+"188
+[; ;main_proyectoMaster.c: 188:     I2C_Master_Write(datPeso);
+[e ( _I2C_Master_Write (1 -> _datPeso `ui ]
 "189
-[; ;main_proyectoMaster.c: 189: }
-[e :UE 150 ]
+[; ;main_proyectoMaster.c: 189:     I2C_Master_Stop();
+[e ( _I2C_Master_Stop ..  ]
+"190
+[; ;main_proyectoMaster.c: 190:      _delay((unsigned long)((200)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 200 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"192
+[; ;main_proyectoMaster.c: 192:     I2C_Master_Start();
+[e ( _I2C_Master_Start ..  ]
+"193
+[; ;main_proyectoMaster.c: 193:     I2C_Master_Write(0x21);
+[e ( _I2C_Master_Write (1 -> -> 33 `i `ui ]
+"194
+[; ;main_proyectoMaster.c: 194:     contRecipiente = I2C_Master_Read(0);
+[e = _contRecipiente -> ( _I2C_Master_Read (1 -> -> 0 `i `us `i ]
+"195
+[; ;main_proyectoMaster.c: 195:     I2C_Master_Stop();
+[e ( _I2C_Master_Stop ..  ]
+"196
+[; ;main_proyectoMaster.c: 196:     _delay((unsigned long)((200)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 200 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"198
+[; ;main_proyectoMaster.c: 198:     I2C_Master_Start();
+[e ( _I2C_Master_Start ..  ]
+"199
+[; ;main_proyectoMaster.c: 199:     I2C_Master_Write(0x40);
+[e ( _I2C_Master_Write (1 -> -> 64 `i `ui ]
+"200
+[; ;main_proyectoMaster.c: 200:     I2C_Master_Write(BanStart);
+[e ( _I2C_Master_Write (1 -> _BanStart `ui ]
+"201
+[; ;main_proyectoMaster.c: 201:     I2C_Master_Stop();
+[e ( _I2C_Master_Stop ..  ]
+"202
+[; ;main_proyectoMaster.c: 202:      _delay((unsigned long)((200)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 200 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"204
+[; ;main_proyectoMaster.c: 204:     I2C_Master_Start();
+[e ( _I2C_Master_Start ..  ]
+"205
+[; ;main_proyectoMaster.c: 205:     I2C_Master_Write(0x41);
+[e ( _I2C_Master_Write (1 -> -> 65 `i `ui ]
+"206
+[; ;main_proyectoMaster.c: 206:     datUltrasonico = I2C_Master_Read(0);
+[e = _datUltrasonico -> ( _I2C_Master_Read (1 -> -> 0 `i `us `i ]
+"207
+[; ;main_proyectoMaster.c: 207:     I2C_Master_Stop();
+[e ( _I2C_Master_Stop ..  ]
+"208
+[; ;main_proyectoMaster.c: 208:     _delay((unsigned long)((200)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 200 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"209
+[; ;main_proyectoMaster.c: 209: }
+[e :UE 153 ]
 }
 [p f _sprintf 8454272 ]
-[a 1C 37 46 51 100 99 109 0 ]
+[a 2C 85 108 116 114 0 ]
+[a 4C 80 101 115 111 0 ]
+[a 1C 37 100 99 109 0 ]
 [a 5C 37 46 50 100 85 110 105 0 ]
-[a 6C 37 46 51 100 0 ]
-[a 4C 83 51 0 ]
-[a 3C 83 50 0 ]
-[a 2C 83 49 0 ]
+[a 6C 37 46 50 100 107 103 0 ]
+[a 3C 69 110 118 97 0 ]

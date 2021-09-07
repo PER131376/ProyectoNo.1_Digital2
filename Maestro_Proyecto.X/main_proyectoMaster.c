@@ -33,13 +33,15 @@ uint8_t contador = 0;       /*Declaración variables*/
 int var1 = 0;
 int var2 = 0;
 int POT;
-uint8_t BanStart = 0;      //Variable para start 
+uint8_t BanStart = 0;      //Variable para start
+int start = 0; 
 int contRecipiente = 0;
 int datUltrasonico = 0;
 float v1 = 0;
 float v2 = 0;
 float v3 = 0;
 int POT;
+int datPeso;
 char s[20];
 //***********Prototipos de funciones************
 void setup(void);           /*funcion principal */
@@ -53,9 +55,12 @@ void __interrupt()isr(void) /*interrupciones*/
     {
         if(RB0 == 0)        //Si boton en RB0 esta presionado
         {
-            BanStart = 1;        //Aumenta contador del PORTA
-            PORTAbits.RA0 = 1; 
-        }
+            start = 1;
+            if (datUltrasonico == 0 & start == 1)
+            {
+                BanStart = 1;        //Enciende bandera de start
+            }
+        } 
     }
     INTCONbits.RBIF = 0;
 }
@@ -69,32 +74,46 @@ void main(void) {
     while(1)
     {
         com_master();
-        if (datUltrasonico < 5)
+        PORTEbits.RE2 = start;
+        /*****STOP*******/
+        if (datUltrasonico == 1 | contRecipiente == 6)
         {
             PORTEbits.RE0 = 1;
+            start = 0;
+            BanStart = 0;
         }
         else
         {
             PORTEbits.RE0 = 0;
         }
+        /******Contadorrecipientes*/
+        if (contRecipiente == 6) 
+        {//Contador de recipientes LLenos
+            PORTEbits.RE1 = 1;
+        }
+        else
+        {
+            PORTEbits.RE1 = 0;
+        }
+        PORTA = datPeso;
         //*******LCD***********//             
-        sprintf(s, "%.3dcm", datUltrasonico);        //convertir valor float a caracteres
+        sprintf(s, "%dcm", datUltrasonico);        //convertir valor float a caracteres
         Lcd_Set_Cursor(2,1);            //Posicion LCD
         Lcd_Write_String(s);            //Hacia pantall
         //Lcd_Clear();
-        Lcd_Set_Cursor(1,2);            //Posicion LCD
-        Lcd_Write_String("S1");         //Caracter en pantalla
-        Lcd_Set_Cursor(1,8);            //Posicion LCD
-        Lcd_Write_String("S2");         //Mostrar S2 en pantalla
+        Lcd_Set_Cursor(1,1);            //Posicion LCD
+        Lcd_Write_String("Ultr");         //Caracter en pantalla
+        Lcd_Set_Cursor(1,7);            //Posicion LCD
+        Lcd_Write_String("Enva");         //Mostrar S2 en pantalla
         Lcd_Set_Cursor(1,14);
-        Lcd_Write_String("S3");
+        Lcd_Write_String("Peso");
         
         sprintf(s, "%.2dUni", contRecipiente);        //convertir valor float con 2 decimales
         Lcd_Set_Cursor(2,7);            //posicion cursor
         Lcd_Write_String(s);            //
         
-        sprintf(s, "%.3d", POT);     //convertir valor entero a caracter
-        Lcd_Set_Cursor(2,14);           //Posicion LCD
+        sprintf(s, "%.2dkg", datPeso);     //convertir valor entero a caracter
+        Lcd_Set_Cursor(2,13);           //Posicion LCD
         Lcd_Write_String(s);
         __delay_ms(80);
         valorsensores();            //TRANSMISIONDATOS_UART
@@ -151,6 +170,7 @@ void configuracionUART(void)
 }
 void com_master(void)
 {
+    /****Sensor_PESO****/
     I2C_Master_Start();    //Inicia la transmis de datos en SDA SEN = 1
     I2C_Master_Write(0x50); //cargamos registro 101 0000 (escribir))
     I2C_Master_Write(BanStart);    //byte de informacion
@@ -159,13 +179,13 @@ void com_master(void)
        
     I2C_Master_Start();
     I2C_Master_Write(0x51);     //cargamos misma direccion pero modo lectura
-    POT = I2C_Master_Read(0);
+    datPeso = I2C_Master_Read(0);
     I2C_Master_Stop();
     __delay_ms(200);  
     /*****ESCLAVOINFRARROJO*/
     I2C_Master_Start();    //Inicia la transmis de datos en SDA SEN = 1
     I2C_Master_Write(0x20); //cargamos registro 101 0000 (escribir))
-    I2C_Master_Write(BanStart);    //byte de informacion
+    I2C_Master_Write(datPeso);    //byte de informacion
     I2C_Master_Stop();  //transmision de datos terminado
      __delay_ms(200);
        

@@ -2854,12 +2854,14 @@ int var1 = 0;
 int var2 = 0;
 int POT;
 uint8_t BanStart = 0;
+int start = 0;
 int contRecipiente = 0;
 int datUltrasonico = 0;
 float v1 = 0;
 float v2 = 0;
 float v3 = 0;
 int POT;
+int datPeso;
 char s[20];
 
 void setup(void);
@@ -2873,8 +2875,11 @@ void __attribute__((picinterrupt((""))))isr(void)
     {
         if(RB0 == 0)
         {
-            BanStart = 1;
-            PORTAbits.RA0 = 1;
+            start = 1;
+            if (datUltrasonico == 0 & start == 1)
+            {
+                BanStart = 1;
+            }
         }
     }
     INTCONbits.RBIF = 0;
@@ -2889,32 +2894,46 @@ void main(void) {
     while(1)
     {
         com_master();
-        if (datUltrasonico < 5)
+        PORTEbits.RE2 = start;
+
+        if (datUltrasonico == 1 | contRecipiente == 6)
         {
             PORTEbits.RE0 = 1;
+            start = 0;
+            BanStart = 0;
         }
         else
         {
             PORTEbits.RE0 = 0;
         }
 
-        sprintf(s, "%.3dcm", datUltrasonico);
+        if (contRecipiente == 6)
+        {
+            PORTEbits.RE1 = 1;
+        }
+        else
+        {
+            PORTEbits.RE1 = 0;
+        }
+        PORTA = datPeso;
+
+        sprintf(s, "%dcm", datUltrasonico);
         Lcd_Set_Cursor(2,1);
         Lcd_Write_String(s);
 
-        Lcd_Set_Cursor(1,2);
-        Lcd_Write_String("S1");
-        Lcd_Set_Cursor(1,8);
-        Lcd_Write_String("S2");
+        Lcd_Set_Cursor(1,1);
+        Lcd_Write_String("Ultr");
+        Lcd_Set_Cursor(1,7);
+        Lcd_Write_String("Enva");
         Lcd_Set_Cursor(1,14);
-        Lcd_Write_String("S3");
+        Lcd_Write_String("Peso");
 
         sprintf(s, "%.2dUni", contRecipiente);
         Lcd_Set_Cursor(2,7);
         Lcd_Write_String(s);
 
-        sprintf(s, "%.3d", POT);
-        Lcd_Set_Cursor(2,14);
+        sprintf(s, "%.2dkg", datPeso);
+        Lcd_Set_Cursor(2,13);
         Lcd_Write_String(s);
         _delay((unsigned long)((80)*(4000000/4000.0)));
         valorsensores();
@@ -2971,6 +2990,7 @@ void configuracionUART(void)
 }
 void com_master(void)
 {
+
     I2C_Master_Start();
     I2C_Master_Write(0x50);
     I2C_Master_Write(BanStart);
@@ -2979,13 +2999,13 @@ void com_master(void)
 
     I2C_Master_Start();
     I2C_Master_Write(0x51);
-    POT = I2C_Master_Read(0);
+    datPeso = I2C_Master_Read(0);
     I2C_Master_Stop();
     _delay((unsigned long)((200)*(4000000/4000.0)));
 
     I2C_Master_Start();
     I2C_Master_Write(0x20);
-    I2C_Master_Write(BanStart);
+    I2C_Master_Write(datPeso);
     I2C_Master_Stop();
      _delay((unsigned long)((200)*(4000000/4000.0)));
 
