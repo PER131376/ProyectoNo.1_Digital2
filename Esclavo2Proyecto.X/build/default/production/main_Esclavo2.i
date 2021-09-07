@@ -2694,6 +2694,7 @@ void I2C_Slave_Init(uint8_t address);
 
 uint8_t z;
 uint8_t dato;
+int datRecibido;
 
 void setup(void);
 
@@ -2704,6 +2705,11 @@ void __attribute__((picinterrupt((""))))isr(void)
         if(RB0 == 0)
         {
             PORTA++;
+            PORTBbits.RB7 = 0;
+        }
+        else
+        {
+
         }
     }
     INTCONbits.RBIF = 0;
@@ -2726,7 +2732,7 @@ void __attribute__((picinterrupt((""))))isr(void)
             PIR1bits.SSPIF = 0;
             SSPCONbits.CKP = 1;
             while(!SSPSTATbits.BF);
-            PORTD = SSPBUF;
+            datRecibido = SSPBUF;
             _delay((unsigned long)((250)*(4000000/4000000.0)));
 
         }else if(!SSPSTATbits.D_nA && SSPSTATbits.R_nW){
@@ -2744,9 +2750,29 @@ void __attribute__((picinterrupt((""))))isr(void)
 
 void main(void) {
     setup();
+                PORTBbits.RB7 = 1;
 
     while(1)
     {
+
+        if(PORTA > 6)
+        {
+            PORTA = 0x00;
+        }
+        if(datRecibido > 200 & PORTBbits.RB7 == 0 )
+        {
+            CCPR2L = 0x3E;
+            CCP2CONbits.DC2B1 = 1;
+            CCP2CONbits.DC2B0 = 0;
+        }
+        else if(datRecibido < 5)
+        {
+            CCPR2L = 0x9C;
+            CCP2CONbits.DC2B1 = 0;
+            CCP2CONbits.DC2B0 = 1;
+            PORTBbits.RB7 = 1;
+        }
+
     }
 }
 
@@ -2757,10 +2783,9 @@ void setup(void)
     ANSELH = 0x00;
 
     TRISA = 0x00;
-    TRISB = 0x03;
+    TRISB = 0x01;
     OPTION_REGbits.nRBPU = 0;
     WPUB = 0b00000001;
-
     PORTA = 0x00;
     PORTB = 0x00;
     I2C_Slave_Init(0x20);
@@ -2771,6 +2796,32 @@ void setup(void)
     OSCCONbits. IRCF1 = 1;
     OSCCONbits. IRCF0 = 0;
     OSCCONbits. SCS = 1;
+
+    TRISCbits.TRISC2 = 1;
+    TRISCbits.TRISC1 = 1;
+
+    PR2 = 255;
+    CCP1CONbits.P1M = 0;
+
+    CCP1CONbits.CCP1M = 0b1100;
+    CCP2CONbits.CCP2M = 0b1100;
+
+    CCPR1L = 0x0f;
+    CCPR2L = 0x0f;
+
+    CCP1CONbits.DC1B = 0;
+    CCP2CONbits.DC2B0 = 0;
+    CCP2CONbits.DC2B1 = 0;
+
+    PIR1bits.TMR2IF = 0;
+    T2CONbits.T2CKPS = 0b11;
+    T2CONbits.TMR2ON = 1;
+
+    while(PIR1bits.TMR2IF == 0);
+    PIR1bits.TMR2IF = 0;
+
+    TRISCbits.TRISC2 = 0;
+    TRISCbits.TRISC1 = 0;
 
     INTCONbits. GIE = 1;
     INTCONbits. RBIE = 1;
